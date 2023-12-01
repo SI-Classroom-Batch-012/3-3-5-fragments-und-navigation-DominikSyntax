@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/forLifeFragment">
+
+    <fragment
+        android:id="@+id/forLifeFragment"
+        android:name="com.example.freitag.fragments.ForLifeFragment"
+        android:label="fragment_for_life"
+        tools:layout="@layout/fragment_for_life" >
+        <action
+            android:id="@+id/action_forLifeFragment_to_wishlistFragment"
+            app:destination="@id/wishlistFragment" />
+        <action
+            android:id="@+id/action_forLifeFragment_to_roWFragment"
+            app:destination="@id/roWFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roWFragment"
+        android:name="com.example.freitag.fragments.RoWFragment"
+        android:label="fragment_ro_w"
+        tools:layout="@layout/fragment_ro_w" >
+        <action
+            android:id="@+id/action_roWFragment_to_wishlistFragment"
+            app:destination="@id/wishlistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/technicFragment"
+        android:name="com.example.freitag.fragments.TechnicFragment"
+        android:label="fragment_technic"
+        tools:layout="@layout/fragment_technic" >
+        <action
+            android:id="@+id/action_technicFragment_to_wishlistFragment"
+            app:destination="@id/wishlistFragment" />
+        <action
+            android:id="@+id/action_technicFragment_to_forLifeFragment"
+            app:destination="@id/forLifeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wishlistFragment"
+        android:name="com.example.freitag.fragments.WishlistFragment"
+        android:label="fragment_wishlist"
+        tools:layout="@layout/fragment_wishlist" >
+        <action
+            android:id="@+id/action_wishlistFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.freitag.fragments.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_technicFragment"
+            app:destination="@id/technicFragment" />
+    </fragment>
+</navigation>
