@@ -15,8 +15,6 @@ class Adapter(val dataset: MutableList<Gift>,
 ) : RecyclerView.Adapter<Adapter.TeamViewHolder>() {
 
 
-
-
     inner class TeamViewHolder(val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root)
     //weis noch nicht was sinnvoller ist
 
@@ -49,31 +47,8 @@ class Adapter(val dataset: MutableList<Gift>,
 
         holder.binding.giftNameCardTV.text = gift.name
         holder.binding.giftCardIV.setImageResource(gift.picture)
-        holder.binding.root.setOnClickListener {
 
-        }
-
-
-        gift.   g .setOnClickListener {
-
-            team.score += 1
-            Log.d("ScoreDebug", "$team")
-            //holder.binding.scoreTV.text = team.score.toString()
-
-            notifyItemChanged(holder.adapterPosition)
-        }
-
-        holder.binding.imageButton.setOnClickListener {
-
-            //Team aus der Liste löschen
-            dataset.removeAt(holder.adapterPosition)
-
-            //Adapter informieren was sich verändert hat
-            notifyItemRemoved(holder.adapterPosition)
-            //notifyItemRangeChanged(position, dataset.size-1)
-            //notifyDataSetChanged()
-
-        }
 
 
     }
+}
