@@ -4,6 +4,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.freitag.MainActivity
 import com.example.freitag.data.ForMyLife
 import com.example.freitag.data.Gift
 import com.example.freitag.data.RestOfTheWorld
@@ -12,6 +13,9 @@ import com.example.freitag.databinding.ListItemBinding
 
 class Adapter(val dataset: MutableList<Gift>,
 ) : RecyclerView.Adapter<Adapter.TeamViewHolder>() {
+
+
+
 
     inner class TeamViewHolder(val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root)
     //weis noch nicht was sinnvoller ist
@@ -40,14 +44,17 @@ class Adapter(val dataset: MutableList<Gift>,
 
     override fun onBindViewHolder(holder: TeamViewHolder, position: Int) {
 
-        val team = dataset[position]
+        val gift = dataset[position]
 
 
-        holder.binding.nameTV.text = team.name
-        holder.binding.scoreTV.text = team.score.toString()
-//        holder.binding.scoreTV.text = "${team.score}"
+        holder.binding.giftNameCardTV.text = gift.name
+        holder.binding.giftCardIV.setImageResource(gift.picture)
+        holder.binding.root.setOnClickListener {
 
-        holder.binding.teamCV.setOnClickListener {
+        }
+
+
+        gift.   g .setOnClickListener {
 
             team.score += 1
             Log.d("ScoreDebug", "$team")
