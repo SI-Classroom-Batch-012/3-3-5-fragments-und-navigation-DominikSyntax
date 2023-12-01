@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/forLifeFragment">
+    app:startDestination="@id/welcomeFragment">
 
     <fragment
         android:id="@+id/forLifeFragment"
@@ -29,5 +29,9 @@
         android:id="@+id/welcomeFragment"
         android:name="com.example.freitag.fragments.WelcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" />
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_technicFragment"
+            app:destination="@id/technicFragment" />
+    </fragment>
 </navigation>
