@@ -24,4 +24,6 @@
 
     <!-- Wunschbeschreibungen -->
     <string name="descript_PC">Weißt du nicht was ein PC ist? Mit Internetz und Ballerspiele usw....</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
