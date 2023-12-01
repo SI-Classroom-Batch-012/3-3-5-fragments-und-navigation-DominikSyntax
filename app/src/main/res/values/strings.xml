@@ -10,6 +10,18 @@
 
     <!-- Button Texte -->
     <string name="start_btn">Start</string>
+    <string name="toLifeWishes">Lebenswünsche</string>
+    <string name="toTechnic">Technik</string>
+    <string name="toWishesForTheWorld">Für die Welt</string>
+    <string name="sendToHaven">Zum Christkind schicken</string>
+    <string name="refresh">Ich fang neu an</string>
 
-    <!-- Bilder Beschreibungen -->
+    <!-- Seiten Namen -->
+    <string name="wishlist">Meine Wunschliste</string>
+    <string name="technic">Technik</string>
+    <string name="forLife">Lebenswünsche</string>
+    <string name="toHuman">Für die Welt</string>
+
+    <!-- Wunschbeschreibungen -->
+    <string name="descript_PC">Weißt du nicht was ein PC ist? Mit Internetz und Ballerspiele usw....</string>
 </resources>
